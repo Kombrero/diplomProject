@@ -2,9 +2,9 @@
 
 const sendForm = (form => {
 
-    const errorMessage = 'Что-то пошло не так',
-        loadMessage = 'Загрузка ...',
-        successMessage = 'Спасибо! Мы скоро с вами свяжемся';
+    const errorMessage = 'Ошибка',
+        loadMessage = 'Идет отправка ...',
+        successMessage = 'Отправлено';
 
     const statusMessagge = document.createElement('div');
     statusMessagge.style.cssText = 'font-size: 2rem; color: blue;';
