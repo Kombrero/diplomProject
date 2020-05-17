@@ -12,6 +12,7 @@ import loadDiv from './modules/loadDiv';
 import secondModuleWindow from './modules/secondModuleWindow';
 import thirdModuleWindow from './modules/thirdModuleWindow';
 import fourthModuleWindow from './modules/fourthModuleWindow';
+import validPhone from './modules/validPhone';
 
 elementClosest(window);
 moduleWindow();
@@ -38,6 +39,14 @@ sendForm(form5);
 sendForm(form6);
 sendForm(form2);
 sendForm(form7);
+
+validPhone(form1);
+validPhone(form3);
+validPhone(form4);
+validPhone(form5);
+validPhone(form6);
+validPhone(form7);
+
 
 const accordion = document.querySelector('#accordion'),
     accordionTwo = document.querySelector('#accordion-two');
