@@ -18,7 +18,6 @@ const postData = (body => fetch('server.php', {
 
 
 form.addEventListener('submit', event => {
-    console.log('hi');
     event.preventDefault();
     form.appendChild(statusMessagge);
 
