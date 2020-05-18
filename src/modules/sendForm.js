@@ -1,5 +1,7 @@
 'use strict';
 
+import validPhone from './validPhone'
+
 const sendForm = (form => {
 
     const errorMessage = 'Ошибка',
@@ -50,6 +52,9 @@ form.addEventListener('submit', event => {
         elem.value = '';
     });
 });
+
+validPhone(form);
+
 });
 
 export default sendForm;
