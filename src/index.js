@@ -13,6 +13,7 @@ import secondModuleWindow from './modules/secondModuleWindow';
 import thirdModuleWindow from './modules/thirdModuleWindow';
 import fourthModuleWindow from './modules/fourthModuleWindow';
 import seventhForm from './modules/seventhForm';
+import calc from './modules/calc';
 
 elementClosest(window);
 moduleWindow();
@@ -20,6 +21,7 @@ loadDiv();
 secondModuleWindow();
 thirdModuleWindow();
 fourthModuleWindow();
+calc();
 
 const form1 = document.querySelector('.capture-form'),
     //form2 = document.querySelector('.director-form'),

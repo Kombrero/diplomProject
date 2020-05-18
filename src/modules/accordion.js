@@ -36,7 +36,7 @@ const accordion = (form) => {
     const toggleTabBtn = index => {
         for (let i = 0; i < panelDefault.length; i++) {
             let p = i + 1;
-            if (index === i) {
+            if (index === i && index !== panelDefault.length - 1) {
                 panelCollapse[i].classList.remove('in');
                 panelCollapse[i+1].classList.add('in');
             } 
