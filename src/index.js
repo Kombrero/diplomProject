@@ -12,6 +12,7 @@ import loadDiv from './modules/loadDiv';
 import secondModuleWindow from './modules/secondModuleWindow';
 import thirdModuleWindow from './modules/thirdModuleWindow';
 import fourthModuleWindow from './modules/fourthModuleWindow';
+import seventhForm from './modules/seventhForm';
 
 elementClosest(window);
 moduleWindow();
@@ -21,7 +22,7 @@ thirdModuleWindow();
 fourthModuleWindow();
 
 const form1 = document.querySelector('.capture-form'),
-    form2 = document.querySelector('.director-form'),
+    //form2 = document.querySelector('.director-form'),
     form3 = document.querySelector('.second-form'),
     form4 = document.querySelector('.main-form'),
     divForm5 = document.querySelector('.popup-discount'),
@@ -37,7 +38,7 @@ sendForm(form4);
 sendForm(form5);
 sendForm(form6);
 //sendForm(form2);
-sendForm(form7);
+seventhForm(form7);
 
 const accordion = document.querySelector('#accordion'),
     accordionTwo = document.querySelector('#accordion-two');
