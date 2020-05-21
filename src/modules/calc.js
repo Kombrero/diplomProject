@@ -1,4 +1,5 @@
 'use strict';
+import calcSend from './calcSend';
 
  let objc = {};
 
@@ -85,7 +86,9 @@ const calc = () => {
                     bottomPrice,
                     sum};
 
-                    
+                 setTimeout(() => {
+                     objc;
+                 }, 5000);   
             } )
         }
     });

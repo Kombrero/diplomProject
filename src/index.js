@@ -12,8 +12,11 @@ import loadDiv from './modules/loadDiv';
 import secondModuleWindow from './modules/secondModuleWindow';
 import thirdModuleWindow from './modules/thirdModuleWindow';
 //import fourthModuleWindow from './modules/fourthModuleWindow';
-import seventhForm from './modules/seventhForm';
+//import seventhForm from './modules/seventhForm';
 import * as calcs from './modules/calc';
+import calcSend from './modules/calcSend';
+import * as consultation from './modules/consultationForm';
+import consultationSend from './modules/consultationSend';
 
 elementClosest(window);
 moduleWindow();
@@ -23,11 +26,7 @@ thirdModuleWindow();
 
 calcs.calc();
 
-
-
-
 const form1 = document.querySelector('.capture-form'),
-    form3 = document.querySelector('.second-form'),
     form4 = document.querySelector('.main-form'),
     divForm5 = document.querySelector('.popup-discount'),
     form5 = divForm5.querySelector('.capture-form'),
@@ -36,12 +35,14 @@ const form1 = document.querySelector('.capture-form'),
     divForm7 = document.querySelector('.popup-consultation'),
     form7 = divForm7.querySelector('.capture-form');
 
+consultationSend();
+calcSend();
 sendForm(form1);
-sendForm(form3);
+//consultation.consultationForm();
 sendForm(form4);
 sendForm(form5);
 sendForm(form6);
-seventhForm(form7);
+//seventhForm(form7);
 
 const accordion = document.querySelector('#accordion'),
     accordionTwo = document.querySelector('#accordion-two');

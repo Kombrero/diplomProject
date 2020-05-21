@@ -18,4 +18,4 @@ const inputSimbol = (form) => {
 
 };
 
-export default inputSimbol;
+///export default inputSimbol;
