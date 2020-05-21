@@ -11,20 +11,22 @@ import getAccordion from './modules/accordion';
 import loadDiv from './modules/loadDiv';
 import secondModuleWindow from './modules/secondModuleWindow';
 import thirdModuleWindow from './modules/thirdModuleWindow';
-import fourthModuleWindow from './modules/fourthModuleWindow';
+//import fourthModuleWindow from './modules/fourthModuleWindow';
 import seventhForm from './modules/seventhForm';
-import calc from './modules/calc';
+import * as calcs from './modules/calc';
 
 elementClosest(window);
 moduleWindow();
 loadDiv();
 secondModuleWindow();
 thirdModuleWindow();
-fourthModuleWindow();
-calc();
+
+calcs.calc();
+
+
+
 
 const form1 = document.querySelector('.capture-form'),
-    //form2 = document.querySelector('.director-form'),
     form3 = document.querySelector('.second-form'),
     form4 = document.querySelector('.main-form'),
     divForm5 = document.querySelector('.popup-discount'),
@@ -39,7 +41,6 @@ sendForm(form3);
 sendForm(form4);
 sendForm(form5);
 sendForm(form6);
-//sendForm(form2);
 seventhForm(form7);
 
 const accordion = document.querySelector('#accordion'),
